@@ -752,9 +752,9 @@ struct ion_flag_data {
  *
  * Takes an ion_fd_data struct with the fd field populated with a valid file
  * descriptor obtained from ION_IOC_SHARE and returns the struct with the handle
- * filed set to the corresponding opaque handle.
+ * field set to the corresponding opaque handle.
  */
-#define ION_IOC_IMPORT		_IOWR(ION_IOC_MAGIC, 5, int)
+#define ION_IOC_IMPORT		_IOWR(ION_IOC_MAGIC, 5, struct ion_fd_data)
 
 /**
  * DOC: ION_IOC_SYNC - syncs a shared file descriptors to memory
